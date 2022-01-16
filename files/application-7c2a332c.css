@@ -5637,8 +5637,8 @@ canvas {
 	position: absolute;
 	top: 44%;
 	left: 50%;
-	-webkit-transform: translateX(-50%) rotate(45deg);
-	transform: translateX(-50%) rotate(45deg);
+	/*-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);*/
 	-webkit-animation: fadeCross 3000ms ease-out;
 	animation: fadeCross 3000ms ease-out
 }
@@ -5652,36 +5652,36 @@ canvas {
 @-webkit-keyframes fadeCross {
 	0% {
 		opacity: 0;
-		-webkit-transform: translateX(-50%) rotate(45deg) scale(0.95);
-		transform: translateX(-50%) rotate(45deg) scale(0.95)
+		-webkit-transform: translateX(-50%) scale(0.95);
+		transform: translateX(-50%) scale(0.95)
 	}
 	80% {
 		opacity: 0;
-		-webkit-transform: translateX(-50%) rotate(45deg) scale(0.95);
-		transform: translateX(-50%) rotate(45deg) scale(0.95)
+		-webkit-transform: translateX(-50%) scale(0.95);
+		transform: translateX(-50%) scale(0.95)
 	}
 	100% {
 		opacity: 1;
-		-webkit-transform: translateX(-50%) rotate(45deg) scale(1);
-		transform: translateX(-50%) rotate(45deg) scale(1)
+		-webkit-transform: translateX(-50%) scale(1);
+		transform: translateX(-50%) scale(1)
 	}
 }
 
 @keyframes fadeCross {
 	0% {
 		opacity: 0;
-		-webkit-transform: translateX(-50%) rotate(45deg) scale(0.95);
-		transform: translateX(-50%) rotate(45deg) scale(0.95)
+		-webkit-transform: translateX(-50%) scale(0.95);
+		transform: translateX(-50%) scale(0.95)
 	}
 	80% {
 		opacity: 0;
 		-webkit-transform: translateX(-50%) rotate(45deg) scale(0.95);
-		transform: translateX(-50%) rotate(45deg) scale(0.95)
+		transform: translateX(-50%) scale(0.95)
 	}
 	100% {
 		opacity: 1;
 		-webkit-transform: translateX(-50%) rotate(45deg) scale(1);
-		transform: translateX(-50%) rotate(45deg) scale(1)
+		transform: translateX(-50%) scale(1)
 	}
 }
 
@@ -5689,15 +5689,24 @@ canvas {
 	position: absolute;
 	width: 16px;
 	height: 16px;
-	background: #F7BCA5;
-	-webkit-transform: scaleX(10) scaleY(0.15);
-	transform: scaleX(10) scaleY(0.15)
+	/*background: #F7BCA5;*/
+	/*-webkit-transform: scaleX(10) scaleY(0.15);
+	transform: scaleX(10) scaleY(0.15)*/
+}
+
+.index-header__cross-1::after {
+	content: '❤️';
+	position: absolute;
+	opacity: 0.05;
+	font-size: 10rem;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
 }
 
 @media only screen and (min-width: 770px) {
 	.index-header__cross-1 {
-		-webkit-transform: scaleX(12) scaleY(0.2);
-		transform: scaleX(12) scaleY(0.2)
+		/*-webkit-transform: scaleX(12) scaleY(0.2);
+		transform: scaleX(12) scaleY(0.2)*/
 	}
 }
 
