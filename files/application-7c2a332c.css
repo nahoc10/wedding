@@ -6725,49 +6725,6 @@ div.index-br-green-dots {
 	width: 100%
 }
 
-.index-la__map-mark {
-	position: absolute;
-	top: 27%;
-	left: 42%;
-	-webkit-transform: scale(0.5);
-	transform: scale(0.5)
-}
-
-@media only screen and (min-width: 770px) {
-	.index-la__map-mark {
-		top: 40%;
-		left: 50%;
-		-webkit-transform: none;
-		transform: none
-	}
-}
-
-.index-la__map-mark:before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 48px;
-	left: 31px;
-	width: 30px;
-	height: 3px;
-	background: #FF5734;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg)
-}
-
-.index-la__map-mark:after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 48px;
-	left: 31px;
-	width: 30px;
-	height: 3px;
-	background: #FF5734;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg)
-}
-
 .index-la__map-mark-image {
 	width: 91px;
 	-webkit-animation: spin 9000ms linear infinite;
@@ -7006,7 +6963,7 @@ div.index-br-green-dots {
 }
 
 .index-registry {
-	margin-top: 12em
+	margin-top: 3em
 }
 
 .index-registry a {
